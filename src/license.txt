@@ -1,0 +1,33 @@
+# licenses.txt
+# Список использованных изображений и лицензий. Поместите сюда строки вида:
+# <имя файла> — <источник / URL> — <лицензия>
+
+
+# Пример (заполните реальные ссылки после добавления иконок):
+visa.svg — https://commons.wikimedia.org/wiki/File:Visa_Inc._logo.svg — лицензия указана на странице Wikimedia Commons
+mastercard.svg — https://commons.wikimedia.org/wiki/File:Mastercard_2019_logo.svg — лицензия указана на странице Wikimedia Commons
+amex.svg — https://commons.wikimedia.org/wiki/File:American_Express_logo_%282018%29.svg — лицензия указана на странице Wikimedia Commons
+discover.svg — (источник) — (лицензия)
+
+https://www.svgrepo.com/svg/328121/mastercard
+https://www.svgrepo.com/svg/328123/mir
+https://www.svgrepo.com/svg/328125/maestro
+https://www.svgrepo.com/svg/328127/visa
+https://www.svgrepo.com/svg/328132/discover
+
+
+https://www.svgrepo.com/page/licensing/#Logo
+Logo License
+(As visual work) Varying definition
+
+Artworks listed as Logo license can be only used with varying limitations from the copyright holder. In order to use the logo of the company "Apple" in their work, user needs to research the appropriate way of and rules of the company.
+
+You are free:
+
+to share – to copy, distribute and transmit the work
+Under the following terms:
+
+to remix – you can't remix or change it for any use in an unintended way.
+liability – the author doesn't provide any warranty and doesn't accepts any liability
+trademark use – does not grand trademark rights.
+varying terms – terms of the license can change per company or author basis, user have to research additional terms.

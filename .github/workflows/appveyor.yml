@@ -1,0 +1,24 @@
+image: Visual Studio 2022
+environment:
+  NODE_VERSION: "18"
+
+init:
+  - ps: >
+      choco install nodejs-lts -y
+  - ps: >
+      refreshenv
+
+install:
+  - ps: >
+      corepack enable
+  - ps: >
+      corepack prepare yarn@stable --activate
+  - ps: >
+      yarn install --frozen-lockfile
+
+build_script:
+  - ps: >
+      yarn test
+
+artifacts:
+  - path: dist
