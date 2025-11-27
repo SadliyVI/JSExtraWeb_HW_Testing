@@ -7,15 +7,8 @@
 Простой виджет для проверки номера банковской карты (алгоритм Луна)
 с подсветкой платёжной системы.
 
-![build-badge](https://github.com/SadliyVI/JSExtraWeb_HW_Testing/actions/workflows/main.yml/badge.svg)
+![Build](https://github.com/SadliyVI/JSExtraWeb_HW_Testing/actions/workflows/main.yml/badge.svg)
 
 ### 🚀 Демо
 
-[Live demo] (<https://sadliyvi.github.io/JSExtraWeb_HW_Testing/>)
-
-### Сборка
-
-```bash
-yarn install
-yarn run build
-```
+[Live demo] (https://sadliyvi.github.io/JSExtraWeb_HW_Testing/)
