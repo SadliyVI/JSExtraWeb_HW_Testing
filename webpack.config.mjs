@@ -7,51 +7,51 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default {
-    entry: "./src/index.js",
+  entry: "./src/index.js",
 
-    output: {
-        filename: "bundle.js",
-        path: path.resolve(__dirname, "dist"),
-        clean: true,
-    },
+  output: {
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
+  },
 
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: "babel-loader",
-            },
-            {
-                test: /\.css$/,
-                use: ["style-loader", "css-loader"],
-            },
-            {
-                test: /\.(png|jpg|jpeg|svg)$/i,
-                type: "asset/resource",
-                generator: {
-                    filename: "assets/[name][ext]",
-                },
-            },
-        ],
-    },
-
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: "./src/index.html",
-        }),
-
-        new CopyPlugin({
-            patterns: [{ from: "src/assets", to: "assets" }],
-        }),
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: "babel-loader",
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|jpg|jpeg|svg)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/[name][ext]",
+        },
+      },
     ],
+  },
 
-    devServer: {
-        static: path.resolve(__dirname, "dist"),
-        port: 8080,
-        open: true,
-        hot: true,
-    },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+    }),
 
-    mode: "development",
+    new CopyPlugin({
+      patterns: [{ from: "src/assets", to: "assets" }],
+    }),
+  ],
+
+  devServer: {
+    static: path.resolve(__dirname, "dist"),
+    port: 8080,
+    open: true,
+    hot: true,
+  },
+
+  mode: "development",
 };

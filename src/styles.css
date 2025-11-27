@@ -1,91 +1,96 @@
 :root {
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: #f3f4f6;
-    margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f3f4f6;
+  margin: 0;
 }
 
 .card {
-    width: 540px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-    padding: 30px;
-    box-sizing: border-box;
+  width: 540px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  box-sizing: border-box;
 }
 
 .title {
-    font-size: 28px;
-    margin-bottom: 16px;
-    text-align: center;
+  font-size: 28px;
+  margin-bottom: 16px;
+  text-align: center;
 }
 
 .icons {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 20px;
-    justify-content: space-between;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: space-between;
 }
 
 .icon {
-    width: 64px;
-    height: 64px;
-    object-fit: contain;
-    opacity: 0.35;
-    flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  opacity: 0.35;
+  flex-shrink: 0;
 }
 
 .icon.active {
-    opacity: 1;
+  opacity: 1;
 }
 
 .input-row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
 }
 
 .input {
-    flex: 1 1 auto;
-    padding: 12px;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    font-size: 18px;
+  flex: 1 1 auto;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 18px;
 }
 
 button {
-    padding: 12px 20px;
-    border-radius: 8px;
-    border: 0;
-    background: #0c4edd;
-    color: white;
-    cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 0;
+  background: #0c4edd;
+  color: white;
+  cursor: pointer;
 }
 
 .result {
-    margin-top: 16px;
-    font-weight: 600;
-    text-align: center;
+  margin-top: 16px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .bad {
-    color: #dc2626;
+  color: #dc2626;
 }
 
 .good {
-    color: #16a34a;
+  color: #16a34a;
 }
 
 small {
-    display: block;
-    margin-top: 8px;
-    color: #6b7280;
-    text-align: left;
+  display: block;
+  margin-top: 8px;
+  color: #6b7280;
+  text-align: left;
 }
