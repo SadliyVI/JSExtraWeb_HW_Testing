@@ -11,4 +11,4 @@
 
 ### 🚀 Демо
 
-[Live demo] (https://sadliyvi.github.io/JSExtraWeb_HW_Testing/)
+[Live demo](https://sadliyvi.github.io/JSExtraWeb_HW_Testing/)

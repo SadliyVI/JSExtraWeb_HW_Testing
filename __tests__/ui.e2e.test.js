@@ -27,7 +27,7 @@ describe("UI E2E tests", () => {
     button.click();
 
     expect(result.classList.contains("good")).toBe(true);
-    expect(result.textContent).toContain("Валиден");
+      expect(result.textContent).toContain("Номер валиден");
     expect(result.textContent).toContain("VISA");
   });
 
