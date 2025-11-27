@@ -54,7 +54,7 @@ export function initUI(rootEl) {
     const issuer = detectIssuer(val);
     updateIcons(issuer);
     if (ok) {
-      result.textContent = `Валиден — ${issuer.toUpperCase()}`;
+      result.textContent = `Номер валиден — ${issuer.toUpperCase()}`;
       result.className = "result good";
     } else {
       result.textContent = `Неверный номер — ${issuer === "unknown" ? "неизвестная сеть" : issuer.toUpperCase()}`;
@@ -62,7 +62,6 @@ export function initUI(rootEl) {
     }
   });
 
-  // Обработка кнопки "Проверить"
   btn.addEventListener("click", () => {
     const val = input.value.trim();
     if (!val) {
@@ -75,7 +74,7 @@ export function initUI(rootEl) {
     const issuer = detectIssuer(val);
     updateIcons(issuer);
     if (ok) {
-      result.textContent = `Валиден — ${issuer.toUpperCase()}`;
+        result.textContent = `Номер валиден — ${issuer.toUpperCase()}`;
       result.className = "result good";
     } else {
       result.textContent = `Неверный номер — ${issuer === "unknown" ? "неизвестная сеть" : issuer.toUpperCase()}`;
@@ -83,7 +82,6 @@ export function initUI(rootEl) {
     }
   });
 
-  // Подсветка при вводе по BIN
   input.addEventListener("input", () => {
     const digits = input.value.replace(/\D/g, "");
     if (digits.length >= 4) {

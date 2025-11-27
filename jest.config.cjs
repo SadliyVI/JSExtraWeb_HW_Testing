@@ -1,18 +1,16 @@
 module.exports = {
-    testEnvironment: "jsdom",
+  testEnvironment: "jsdom",
 
-    transform: {
-        "^.+\\.js$": "babel-jest",
-    },
+  transform: {
+    "^.+\\.js$": "babel-jest",
+  },
 
-    moduleNameMapper: {
-        "\\.(css|less|sass|scss)$": "identity-obj-proxy",
-        "\\.(png|jpg|jpeg|gif|svg|wav)$": "<rootDir>/__mocks__/fileMock.js"
-    },
+  moduleNameMapper: {
+    "\\.(css|less|sass|scss)$": "identity-obj-proxy",
+    "\\.(png|jpg|jpeg|gif|svg|wav)$": "<rootDir>/__mocks__/fileMock.js",
+  },
 
-    transformIgnorePatterns: [
-        "/node_modules/"
-    ],
+  transformIgnorePatterns: ["/node_modules/"],
 
-    roots: ["<rootDir>/__tests__", "<rootDir>/src"]
+  roots: ["<rootDir>/__tests__", "<rootDir>/src"],
 };
