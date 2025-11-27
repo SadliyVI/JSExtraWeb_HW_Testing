@@ -5,7 +5,7 @@
 ### Credit Card Validator
 
 Простой виджет для проверки номера банковской карты (алгоритм Луна)
-с подсветкой платёжной системы.
+с подсветкой платёжной системы при вводе первых четырех цифр.
 
 ![Build](https://github.com/SadliyVI/JSExtraWeb_HW_Testing/actions/workflows/main.yml/badge.svg)
 
