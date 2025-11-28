@@ -12,5 +12,5 @@ module.exports = {
 
   transformIgnorePatterns: ["/node_modules/"],
 
-  roots: ["<rootDir>/__tests__", "<rootDir>/src"],
+    roots: ["<rootDir>/__tests__", "<rootDir>/__E2E__", "<rootDir>/src"],
 };

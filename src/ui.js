@@ -32,14 +32,12 @@ export function initUI(rootEl) {
   const result = container.querySelector("#result");
 
   function updateIcons(issuer) {
-    ["mir", "visa", "mastercard", "discover", "maestro", "amex"].forEach(
-      (name) => {
-        const el = container.querySelector(`#icon-${name}`);
-        if (!el) return;
-        if (name === issuer) el.classList.add("active");
-        else el.classList.remove("active");
-      },
-    );
+    ["mir", "visa", "mastercard", "discover", "maestro", "amex"].forEach(name => {
+      const el = container.querySelector(`#icon-${name}`);
+      if (!el) return;
+      if (name === issuer) el.classList.add("active");
+      else el.classList.remove("active");
+    });
   }
 
   btn.addEventListener("click", () => {
@@ -57,27 +55,8 @@ export function initUI(rootEl) {
       result.textContent = `Номер валиден — ${issuer.toUpperCase()}`;
       result.className = "result good";
     } else {
-      result.textContent = `Неверный номер — ${issuer === "unknown" ? "неизвестная сеть" : issuer.toUpperCase()}`;
-      result.className = "result bad";
-    }
-  });
-
-  btn.addEventListener("click", () => {
-    const val = input.value.trim();
-    if (!val) {
-      result.textContent = "Введите номер карты";
-      result.className = "result bad";
-      updateIcons("unknown");
-      return;
-    }
-    const ok = luhnCheck(val);
-    const issuer = detectIssuer(val);
-    updateIcons(issuer);
-    if (ok) {
-        result.textContent = `Номер валиден — ${issuer.toUpperCase()}`;
-      result.className = "result good";
-    } else {
-      result.textContent = `Неверный номер — ${issuer === "unknown" ? "неизвестная сеть" : issuer.toUpperCase()}`;
+      result.textContent = `Неверный номер — ${issuer === "unknown" ? "неизвестная сеть" : issuer.toUpperCase()
+        }`;
       result.className = "result bad";
     }
   });

@@ -1,5 +1,3 @@
-// validator.js — содержит логику проверки номера карты (Luhn) и определения платёжной системы
-
 /**
  * Проверка при помощи алгоритма Луна (Luhn)
  * Вход: строка, содержащая только цифры (может содержать пробелы — они будут удалены)
@@ -22,10 +20,6 @@ export function luhnCheck(number) {
   return sum % 10 === 0;
 }
 
-/**
- * Определение платёжной системы (IIN ranges)
- * Возвращает строку идентификатора: 'visa', 'mastercard', 'amex', 'discover', 'jcb', 'maestro', 'unknown'
- */
 export function detectIssuer(number) {
   const s = String(number).replace(/\s+/g, "");
   if (!/^[0-9]+$/.test(s)) return "unknown";
@@ -55,6 +49,7 @@ export function detectIssuer(number) {
 /**
  * Определение платежной системы по BIN (4–6 цифр) для подсветки при вводе
  */
+
 export function detectIssuerByBIN(bin) {
   if (!/^\d+$/.test(bin)) return "unknown";
 

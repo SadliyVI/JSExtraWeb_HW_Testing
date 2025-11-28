@@ -29,7 +29,6 @@ export default [
       ...js.configs.recommended.rules,
       ...pluginImport.configs.recommended.rules,
 
-      // Отключает правила, конфликтующие с Prettier
       ...prettierConfig.rules,
 
       "import/order": [
